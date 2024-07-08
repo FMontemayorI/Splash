@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Script-Type" content="type">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <title>VIWA Lathe Keyboard</title>
+        <style>
+            body {
+                margin: auto auto; /* Remove body margins */
+                width: 100%;
+                height: 100%;
+                background: black;
+            }
+            .Contenedor {
+                display: flex;   
+                align-items: center;
+                justify-content: center;
+                vertical-align: middle;
+            }
+            .Audio {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                height: 48px;
+                width: 48px;
+                border-style: solid;
+                border-color: red;
+                justify-content: right;
+                align-items: right;
+                
+                               
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="Contenedor" class="Contenedor">
+            <!--
+            <object data="Keyboard.svg" type="image/svg+xml" id="Keyboard" width="87%" height="100%"></object>
+            -->
+            <div id="Audio" class="Audio">
+                <svg id="Airpods" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39px" height="48px" viewBox="0 0 39 48" version="1.1" style="opacity: 1; cursor: pointer">
+                    <g id="surface1">
+                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(255, 255, 255);fill-opacity:1;" d="M 7.828125 0.519531 C 6.058594 0.667969 4.058594 1.246094 2.578125 2.046875 C 2.042969 2.332031 1.882812 2.476562 1.675781 2.855469 L 1.507812 3.164062 L 1.507812 11.160156 L 1.679688 11.476562 C 1.90625 11.890625 2.179688 12.097656 2.917969 12.40625 C 3.984375 12.855469 5.1875 13.167969 6.371094 13.300781 C 7.152344 13.386719 8.386719 13.328125 9.046875 13.175781 C 9.828125 12.996094 9.792969 13.035156 9.769531 12.472656 C 9.738281 11.746094 9.546875 11.527344 8.859375 11.457031 C 8.429688 11.410156 8.203125 11.269531 8.035156 10.941406 C 7.914062 10.703125 7.898438 10.636719 7.925781 10.40625 C 7.972656 9.96875 8.195312 9.703125 8.613281 9.566406 C 8.777344 9.511719 8.871094 9.519531 9.207031 9.589844 C 9.785156 9.714844 10.0625 9.800781 10.386719 9.972656 C 10.742188 10.15625 11.242188 10.675781 11.417969 11.046875 C 11.722656 11.65625 11.707031 11.347656 11.707031 17.867188 L 11.707031 23.84375 L 15.613281 23.84375 L 15.59375 14.898438 L 15.578125 5.960938 L 15.46875 5.484375 C 15.1875 4.261719 14.695312 3.328125 13.878906 2.480469 C 12.851562 1.414062 11.714844 0.847656 10.125 0.613281 C 9.601562 0.539062 8.28125 0.484375 7.828125 0.519531 Z M 7.828125 0.519531 "/>
+                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(255, 255, 255);fill-opacity:1;" d="M 29.289062 0.539062 C 27.394531 0.710938 26.136719 1.246094 25.015625 2.375 C 24.296875 3.09375 23.832031 3.847656 23.515625 4.792969 C 23.199219 5.734375 23.214844 5.265625 23.214844 15.023438 L 23.214844 23.890625 L 27.066406 23.890625 L 27.066406 18.015625 C 27.066406 11.554688 27.058594 11.769531 27.375 11.136719 C 27.585938 10.703125 28.125 10.171875 28.558594 9.96875 C 28.953125 9.777344 29.882812 9.550781 30.070312 9.597656 C 30.394531 9.675781 30.671875 9.898438 30.800781 10.199219 C 30.929688 10.507812 30.859375 10.886719 30.613281 11.164062 C 30.410156 11.398438 30.273438 11.460938 29.835938 11.523438 C 29.1875 11.628906 29.042969 11.808594 29.042969 12.554688 L 29.042969 13.046875 L 29.308594 13.117188 C 30.066406 13.339844 30.328125 13.367188 31.4375 13.367188 C 32.351562 13.363281 32.628906 13.347656 33.167969 13.25 C 34.261719 13.058594 35.488281 12.671875 36.324219 12.253906 C 36.703125 12.070312 37.054688 11.699219 37.203125 11.34375 L 37.316406 11.0625 L 37.316406 3.261719 L 37.171875 2.957031 C 36.980469 2.542969 36.6875 2.285156 36.03125 1.953125 C 34.648438 1.25 33.066406 0.761719 31.636719 0.59375 C 30.988281 0.515625 29.832031 0.492188 29.289062 0.539062 Z M 29.289062 0.539062 "/>
+                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(255, 255, 255);fill-opacity:1;" d="M 0.507812 33.347656 C 0.523438 40.824219 0.523438 40.894531 0.628906 41.367188 C 1.160156 43.769531 2.601562 45.625 4.777344 46.699219 C 5.601562 47.113281 6.410156 47.335938 7.394531 47.441406 C 7.71875 47.476562 11.753906 47.488281 19.730469 47.480469 L 31.585938 47.464844 L 32.121094 47.351562 C 35.191406 46.703125 37.417969 44.535156 38.140625 41.496094 L 38.25 41.039062 L 38.265625 33.417969 L 38.277344 25.804688 L 0.488281 25.804688 Z M 20.148438 28.824219 C 20.96875 29.015625 21.660156 29.566406 22.019531 30.320312 C 22.324219 30.953125 22.390625 31.453125 22.25 32.109375 C 21.941406 33.585938 20.484375 34.558594 18.984375 34.289062 C 17.949219 34.101562 17.035156 33.242188 16.769531 32.207031 C 16.449219 30.960938 17.085938 29.617188 18.265625 29.035156 C 18.839844 28.75 19.515625 28.675781 20.148438 28.824219 Z M 20.148438 28.824219 "/>
+                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(255, 255, 255);fill-opacity:1;" d="M 19.386719 30.589844 C 19.363281 30.597656 19.277344 30.617188 19.203125 30.632812 C 19.050781 30.667969 18.746094 30.917969 18.660156 31.074219 C 18.324219 31.699219 18.785156 32.476562 19.488281 32.476562 C 20.621094 32.476562 20.804688 30.867188 19.707031 30.617188 C 19.46875 30.5625 19.464844 30.5625 19.386719 30.589844 Z M 19.386719 30.589844 "/>
+                    </g>
+                </svg>
+            </div>         
+        </div>
+        <script>
+            let speech = 1;
+            let Mensajes = {
+                "Airpods" :
+                {
+                    "texto": "En el modo de husillo automático, la velocidad del husillo aumentará en un 10% hasta un 200% de la velocidad actual.<br><br> Para el modo de husillo manual, la velocidad del husillo se incrementa en un 5% hasta la velocidad máxima del husillo determinada por el fabricante.<br><br> El LED se enciende si la velocidad del husillo se establece por encima del 100%.",
+                    "voz"  : "Estos son los airpods de Aapool, son inalámbricos n el modo de husillo automático, la velocidad del husillo aumentará en un 10% hasta un 200% de la velocidad actual. Para el modo de husillo manual, la velocidad del husillo se incrementa en un 5% hasta la velocidad máxima del husillo determinada por el fabricante. El LED se enciende si la velocidad del husillo se establece por encima del 100%."
+                }
+            }
+
+                Airpods.addEventListener("click", ()=>{Messages(Mensajes.Airpods)}, false);
+
+            function Messages(msg) {
+                speechSynthesis.cancel();
+                if (speech == 1) {
+                    speech.lang = 'es-MX'
+                    speechSynthesis.speak(new SpeechSynthesisUtterance(msg.voz));
+                }
+            }
+        </script>
+    </body>
+</html>
